@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+        body{
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            height: 100vh;
+            margin: 0px;
+            flex-direction: column;
+        }
+        .container{
+            background-color: rgb(74, 74, 240);
+            width: 600px;
+            height: 300px;
+            padding: 50px;
+            margin-left: 300px;
+        }
+        .Upper{
+            background-color: black;
+            height: 100px;
+            border-radius: 10px;
+            width: 450px;
+            margin-left: 50px;
+        }
+        #Date{
+            border-radius: 5px;
+            padding: 14px;
+            color: black;
+            
+            width: 200px;
+        }
+        #calc{
+            border-radius: 5px;
+            padding: 20px;
+            width: 70px;
+            color: black;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+       .lower{
+        display: flex;
+        margin-top: 50px;
+        border-radius: 10px;
+        
+       }
+       #years{
+        background-color: black;
+        height: 100px;
+        border-radius: 20px;
+        padding: 5px;
+        width: 100px;
+        margin-left: 50px;
+       }
+       #months{
+        background-color: black;
+        border-radius: 20px;
+        padding: 5px;
+        width: 100px;
+        margin-left: 50px;
+       }
+       #days{
+        background-color: black;
+        border-radius: 20px;
+        padding: 5px;
+        width: 100px;
+        margin-left: 52px;
+       }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="Upper">
+            <input type="date" id="Date">
+            <input id="calc" placeholder="calculator">
+        </div>
+
+        <div class="lower">
+        <input type="Years" id="years" placeholder="22">
+        <input type="text" id="months" placeholder="6">
+        <input type="number" id="days" placeholder="25">
+        </div>
+
+    </div>
+</body>
+</html>
