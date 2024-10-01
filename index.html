@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calender</title>
     <style>
-        body{
+        body {
             justify-content: center;
             text-align: center;
             display: flex;
@@ -14,27 +15,32 @@
             flex-direction: column;
             background-color: rgb(74, 74, 240);
         }
-        .container{
+
+        .container {
             width: 600px;
             height: 300px;
             padding: 50px;
             margin-left: 300px;
         }
-        .Upper{
+
+        .Upper {
             background-color: black;
             height: 100px;
             border-radius: 10px;
             width: 450px;
             margin-left: 50px;
+            justify-content: center;
         }
-        #Date{
+
+        #Date {
             border-radius: 5px;
             padding: 14px;
             color: black;
-            
+
             width: 200px;
         }
-        #calc{
+
+        #calc {
             font-size: medium;
             border-radius: 5px;
             padding: 18px;
@@ -43,52 +49,61 @@
             margin-left: 30px;
             margin-top: 20px;
         }
-       .lower{
-        display: flex;
-        margin-top: 50px;
-        border-radius: 10px;
-        
-       }
-       #years{
-        background-color: black;
-        height: 100px;
-        border-radius: 20px;
-        padding: 5px;
-        width: 100px;
-        margin-left: 50px;
-       }
-       #months{
-        background-color: black;
-        border-radius: 20px;
-        padding: 5px;
-        width: 100px;
-        margin-left: 50px;
-       }
-       #days{
-        background-color: black;
-        border-radius: 20px;
-        padding: 5px;
-        width: 100px;
-        margin-left: 52px;
-       }
 
-        
+        .lower {
+            display: flex;
+            margin-top: 50px;
+            border-radius: 10px;
+
+        }
+
+        .result-item {
+            background-color: #000;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 55px;
+            margin-right: 10px;
+        }
+
+        .result-item h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .result-item p {
+            font-size: 18px;
+            color: white;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        
+
         <div class="Upper">
             <input type="date" id="Date">
             <button id="calc"><b>Calculate</b></button>
         </div>
 
         <div class="lower">
-            <input type="text" id="years" placeholder="22">
-            <input type="text" id="months" placeholder="6">
-            <input type="text" id="days" placeholder="25">
+            <div class="result-item">
+                <h2 id="years"></h2>
+                <p>Years</p>
+            </div>
+
+            <div class="result-item">
+                <h2 id="years"></h2>
+                <p>Years</p>
+            </div>
+
+            <div class="result-item">
+                <h2 id="years"></h2>
+                <p>Years</p>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
