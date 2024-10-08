@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calender</title>
+    <title>Age Calculation</title>
     <style>
         body {
             justify-content: center;
@@ -32,7 +32,7 @@
             justify-content: center;
         }
 
-        #Date {
+        #dob {
             border-radius: 5px;
             padding: 14px;
             color: black;
@@ -48,6 +48,11 @@
             color: black;
             margin-left: 30px;
             margin-top: 20px;
+        }
+        #calc:hover{
+            cursor: pointer;
+            background-color: rgb(4, 190, 4);
+            color: white;
         }
 
         .lower {
@@ -67,8 +72,9 @@
         }
 
         .result-item h2 {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 30pxpx;
+            color: white;
+            
         }
 
         .result-item p {
@@ -82,8 +88,8 @@
     <div class="container">
 
         <div class="Upper">
-            <input type="date" id="Date">
-            <button id="calc"><b>Calculate</b></button>
+            <input type="date" id="dob">
+            <button id="calc" onclick="calculateAge()"><b>Calculate</b></button>
         </div>
 
         <div class="lower">
@@ -93,13 +99,13 @@
             </div>
 
             <div class="result-item">
-                <h2 id="years"></h2>
-                <p>Years</p>
+                <h2 id="months"></h2>
+                <p>Months</p>
             </div>
 
             <div class="result-item">
-                <h2 id="years"></h2>
-                <p>Years</p>
+                <h2 id="days"></h2>
+                <p>Days</p>
             </div>
         </div>
     </div>
